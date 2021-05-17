@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for App.js render app.js 1`] = `
+<styled.div>
+  <Memo(l) />
+  <h1>
+    TEsting
+  </h1>
+</styled.div>
+`;
