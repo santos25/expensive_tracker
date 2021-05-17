@@ -8,7 +8,6 @@ import {
   Text,
 } from './transactionStyle';
 import { ExpenseTrackerContext } from '../../context/context';
-import { formatNumber } from '../../utils/formatNumber';
 
 const Transaction = () => {
   const { addTrans } = useContext(ExpenseTrackerContext);
