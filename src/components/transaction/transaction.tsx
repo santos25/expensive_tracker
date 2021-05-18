@@ -12,23 +12,19 @@ import { ExpenseTrackerContext } from '../../context/context';
 const Transaction = () => {
   const { addTrans } = useContext(ExpenseTrackerContext);
   const [text, setText] = useState('');
-  const [value, setValue] = useState(0);
-  // const [valueDisplay, setValueDisplay] = useState('3');
+  const [value, setValue] = useState<string | number>('');
 
   const submit = (e: any) => {
     e.preventDefault();
     addTrans({
-      id: Math.floor(Math.random() * 10000000),
+      // id: Math.floor(Math.random() * 10000000),
       text,
       value: Number(value),
       date: new Date()
     });
     setText('')
-    setValue(0);
-    // setValueDisplay('$ 0')
+    setValue('');
   };
-
-  // console.log(formatNumber(Number(valueDisplay)));
 
   
   return (
@@ -49,7 +45,6 @@ const Transaction = () => {
             type="number"
             onChange={(e) => {
               setValue(Number(e.target.value));
-              // setValueDisplay(formatNumber(Number(e.target.value)))
 
             }}
             name="value"

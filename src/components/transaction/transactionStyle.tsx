@@ -14,13 +14,14 @@ export const Input = styled.input`
   width: 100%;
   border: none;
   border-radius: 5px;
+  font-size: 0.9rem;
 
   &:focus {
     outline: none;
   }
 `;
 
-export const Text = styled.h4`
+export const Text = styled.h3`
   margin: 0;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid black;

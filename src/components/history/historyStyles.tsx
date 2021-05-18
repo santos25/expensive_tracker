@@ -4,7 +4,7 @@ export const Container = styled.div`
   padding-bottom: 1rem;
 `;
 
-export const Text = styled.h4`
+export const Text = styled.h3`
   margin: 0;
   padding-bottom: 0.3rem;
   border-bottom: 1px solid black;

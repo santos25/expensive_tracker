@@ -9,7 +9,7 @@ const App: React.FC = (): React.ReactElement => {
     <Container>
       <GlobalStyle />
       <Title>
-        Seguimiento de Gastos
+        SEGUIMIENTO DE GASTOS
       </Title>
       <Total />
       <Main />
