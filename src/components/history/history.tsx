@@ -6,17 +6,15 @@ const History = () => {
   const { transactions, deleteTrans }: { transactions: any[], deleteTrans: any} = useContext(
     ExpenseTrackerContext
   );
-
-  // console.log(transactions);
   
   return (
     <Container>
       <Text>Historial</Text>
       <Data>
         {transactions.map(({id, text, value, date}) => (
-          <Item key={id} value={value}>
+          <Item key={id}>
             <Title>{text}</Title>
-            <Value>{`${formatNumber(Math.abs(value))}`}</Value>
+            <Value value={value}>{`${formatNumber(Math.abs(value))}`}</Value>
             {/* <Value>{date}</Value> */}
             <Button onClick={() => deleteTrans(id)}>X</Button>
           </Item>

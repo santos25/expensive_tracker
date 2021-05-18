@@ -21,13 +21,13 @@ export const Data = styled.ul`
 
 export const Item = styled.li`
   display: flex;
-  padding: 0.2rem 0;
-  border-left: 2px solid ${(props: {value: number}) => props.value < 0 ? 'red' : 'blue'};
-  border-radius: 5px;
+  padding: 0.2rem;
+  /* border-radius: 5px; */
 `;
 
 export const Value = styled.span`
- padding: 0 0.4rem 0
+ padding: 0 0.4rem 0;
+ color: ${(props: {value: number}) => props.value < 0 ? 'red' : 'black'}
 `;
 
 export const Button = styled.button`

@@ -36,7 +36,6 @@ export const Provider = ({ children }: { children: any }) => {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log(datas);
         dispatch({ type: 'FETCH_TRANS', payload: datas });
       });
   };
@@ -46,8 +45,8 @@ export const Provider = ({ children }: { children: any }) => {
       .doc(id)
       .delete()
       .then(() => {
-        console.log('Document successfully deleted!');
-        getAllTransactions();
+        // console.log('Document successfully deleted!');
+        dispatch({ type: 'DELETE_TRANS', payload: id });
       })
       .catch((error) => {
         console.error('Error removing document: ', error);
